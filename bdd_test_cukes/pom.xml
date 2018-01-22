@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bdd_test</artifactId>
+    <artifactId>bdd_test_cukes</artifactId>
 
 
 </project>

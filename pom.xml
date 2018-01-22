@@ -10,8 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>standard_test</module>
-        <module>bdd_test</module>
         <module>bdd_test_jbehave</module>
+        <module>bdd_test_cukes</module>
     </modules>
     <dependencies>
         <dependency>
@@ -51,6 +51,4 @@
             <version>4.1.3</version>
         </dependency>
     </dependencies>
-
-
 </project>
