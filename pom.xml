@@ -12,6 +12,7 @@
         <module>standard_test</module>
         <module>bdd_test_jbehave</module>
         <module>bdd_test_cukes</module>
+        <module>labeling</module>
     </modules>
     <dependencies>
         <dependency>

@@ -1,8 +1,9 @@
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 
-public class ClassB extends ClassA implements Interface{
+public class ClassB extends ClassA implements Interface {
 
     List<String> list;
     Map<Integer, String> map;
@@ -16,5 +17,27 @@ public class ClassB extends ClassA implements Interface{
 
     public void bar() {
 
+    }
+
+    private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    private static String randomAlphaNumeric(int count) {
+        StringBuilder builder = new StringBuilder();
+        while (count-- != 0) {
+            int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
+            builder.append(ALPHA_NUMERIC_STRING.charAt(character));
+        }
+        return builder.toString();
+    }
+
+    public static void main(String[] args) {
+        String one = randomAlphaNumeric(5);
+        String two = randomAlphaNumeric(5);
+
+        if (one.equals(two)) {
+            System.out.println("one == two");
+        } else {
+            System.out.println("one != two");
+        }
     }
 }

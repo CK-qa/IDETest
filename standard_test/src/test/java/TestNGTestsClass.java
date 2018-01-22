@@ -16,5 +16,4 @@ public class TestNGTestsClass {
 
         Assert.assertEquals(1,2);
     }
-
 }

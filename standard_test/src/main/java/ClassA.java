@@ -1,4 +1,4 @@
-public class ClassA {
+public class ClassA implements ParentInterface {
 
     int i;
     float f;

@@ -1,4 +1,4 @@
-public interface Interface {
+public interface Interface extends ParentInterface{
 
     void bar();
 
