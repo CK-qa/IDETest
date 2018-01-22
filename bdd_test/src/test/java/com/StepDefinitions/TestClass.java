@@ -9,7 +9,6 @@ public class TestClass {
 
     private int given;
     private int minus;
-    private int result;
 
 
     @Given("^user has (\\d+) items$")
@@ -26,7 +25,7 @@ public class TestClass {
 
     @Then("^he has (\\d+) items$")
     public void heHasItems(int number) throws Throwable {
-        result = given - minus;
+        int result = given - minus;
         Assert.assertEquals(number, result);
         System.out.println(number + " items left");
     }
