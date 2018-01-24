@@ -41,7 +41,7 @@ public class TestToRun extends JUnitStory {
         @Override
         public List<CandidateSteps> candidateSteps() {
             // varargs, can have more that one steps classes
-            return new InstanceStepsFactory(configuration(), new TestSteps())
+            return new InstanceStepsFactory(configuration(), new TestSteps.StackSteps())
                     .createCandidateSteps();
         }
 }

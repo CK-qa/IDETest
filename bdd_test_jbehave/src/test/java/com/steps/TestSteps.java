@@ -10,7 +10,7 @@ import java.util.Stack;
 public class TestSteps {
 
 
-    public class StackSteps { // Look, Ma', I'm a POJO!
+    public static class StackSteps { // Look, Ma', I'm a POJO!
         private Stack<String> stack;
 
         public StackSteps() {
