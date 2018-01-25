@@ -9,30 +9,27 @@ import java.util.Stack;
 
 public class TestSteps {
 
+    private Stack<String> stack;
 
-    public static class StackSteps { // Look, Ma', I'm a POJO!
-        private Stack<String> stack;
+    public TestSteps() {
+        stack = new Stack<String>();
+    }
 
-        public StackSteps() {
-            stack = new Stack<String>();
+    @Given("an empty stack")
+    public void givenAnEmptyStack() {
+        stack.clear();
+    }
+
+    @When("I add $number elements")
+    public void addElements(int elementCount) {
+        for (int i = 0; i < elementCount; i++) {
+            stack.add((new Integer(i)).toString());
         }
+    }
 
-        @Given("an empty stack")
-        public void givenAnEmptyStack() {
-            stack.clear();
-        }
-
-        @When("I add $number elements")
-        public void addElements(int elementCount) {
-            for (int i = 0; i < elementCount; i++) {
-                stack.add((new Integer(i)).toString());
-            }
-        }
-
-        @Then("the stack should have $number elements")
-        public void assertElementCount(int elementCount) {
-            // assertThat(stack.size(), equalTo(elementCount));
-            Assert.assertEquals(stack.size(), elementCount);
-        }
+    @Then("the stack should have $number elements")
+    public void assertElementCount(int elementCount) {
+        // assertThat(stack.size(), equalTo(elementCount));
+        Assert.assertEquals(stack.size(), elementCount);
     }
 }

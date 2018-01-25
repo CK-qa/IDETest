@@ -16,4 +16,6 @@ public class ClassA implements ParentInterface {
     public int foo() {
         return i + in;
     }
+
+
 }
