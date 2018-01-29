@@ -1,6 +1,5 @@
 package com.StepDefinitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -11,30 +10,52 @@ public class TestClass {
 
     private int given;
     private int minus;
+    private int start;
+    private int eat;
 
 
     @Given("^user has (\\d+) items$")
-    public void userHasItems(int number) throws Throwable {
+    public void userHasItems(int number) {
         given = number;
-        System.out.println("user has " + given + " items");
+        System.out.println("Scenario step1: User has " + given + " items");
     }
 
     @When("^user loses (\\d+) items$")
-    public void userLosesItems(int number) throws Throwable {
+    public void userLosesItems(int number) {
         minus = number;
-        System.out.println("user loses " + minus + " items");
+        System.out.println("Scenario step2: User loses " + minus + " items");
     }
 
     @Then("^he has (\\d+) items$")
-    public void heHasItems(int number) throws Throwable {
+    public void heHasItems(int number) {
         int result = given - minus;
         Assert.assertEquals(number, result);
-        System.out.println(number + " items left");
+        System.out.println("Scenario step3: " + number + " items left");
     }
 
     @And("^everybody happy$")
-    public void everybodyHappy() throws Throwable {
+    public void everybodyHappy() {
         // Write code here that turns the phrase above into concrete actions
-        System.out.println("Yay!");
+        System.out.println("Scenario step4: Yay!");
+    }
+
+    //region 2
+    @Given("^there are (\\d+) cucumbers$")
+    public void thereAreStartCucumbers(int start) {
+        this.start = start;
+        System.out.println("Scenario outline step1: user has " + start + " items");
+    }
+
+    @When("^I eat (\\d+) cucumbers$")
+    public void iEatEatCucumbers(int eat) {
+        this.eat = eat;
+        System.out.println("Scenario outline step2: user eats " + eat + " items");
+    }
+
+    @Then("^I should have (\\d+) cucumbers$")
+    public void iShouldHaveLeftCucumbers(int left) {
+        int res = start - eat;
+        System.out.println("Scenario outline step3: " + res + " items left");
+        Assert.assertEquals(res, left);
     }
 }
