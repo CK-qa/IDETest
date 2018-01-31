@@ -57,5 +57,4 @@ public class TestNGTestsClass {
         int i = 1/0;
         Assert.assertEquals(1,i);
     }
-
 }
