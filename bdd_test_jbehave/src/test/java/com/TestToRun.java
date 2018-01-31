@@ -17,31 +17,31 @@ import java.util.List;
 
 public class TestToRun extends JUnitStory {
 
-        // Here we specify the configuration, starting from default
-        // MostUsefulConfiguration, and changing only what is needed
-        @Override
-        public Configuration configuration() {
-            // where to find the stories
-            URL storyURL = null;
-            System.out.println(System.getProperty("user.dir"));
-            try {
-                storyURL = new URL("file://" + System.getProperty("user.dir") + "/src/test/java");
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
-
-            return  new MostUsefulConfiguration()
-                    .useStoryLoader(storyURL != null ? new LoadFromRelativeFile(storyURL) : new LoadFromClasspath(this.getClass()))
-                    // CONSOLE and TXT reporting
-                    .useStoryReporterBuilder(new StoryReporterBuilder().withDefaultFormats().withFormats(Format.CONSOLE, Format.TXT));
+    // Here we specify the configuration, starting from default
+    // MostUsefulConfiguration, and changing only what is needed
+    @Override
+    public Configuration configuration() {
+        // where to find the stories
+        URL storyURL = null;
+        System.out.println(System.getProperty("user.dir"));
+        try {
+            storyURL = new URL("file://" + System.getProperty("user.dir") + "/src/test/java");
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
         }
 
+        return new MostUsefulConfiguration()
+                .useStoryLoader(storyURL != null ? new LoadFromRelativeFile(storyURL) : new LoadFromClasspath(this.getClass()))
+                // CONSOLE and TXT reporting
+                .useStoryReporterBuilder(new StoryReporterBuilder().withDefaultFormats().withFormats(Format.CONSOLE, Format.TXT));
+    }
 
-        // Here we specify the steps classes
-        @Override
-        public List<CandidateSteps> candidateSteps() {
-            // varargs, can have more that one steps classes
-            return new InstanceStepsFactory(configuration(), new TestSteps())
-                    .createCandidateSteps();
-        }
+
+    // Here we specify the steps classes
+    @Override
+    public List<CandidateSteps> candidateSteps() {
+        // varargs, can have more that one steps classes
+        return new InstanceStepsFactory(configuration(), new TestSteps())
+                .createCandidateSteps();
+    }
 }
