@@ -1,16 +1,22 @@
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
+
 public class ClassB extends ClassA implements Interface {
 
-    private static String VAR_1;
-    private static String var_2;
+    List<String> list;
+    Map<Integer, String> map;
+    Set<Integer> set;
 
+    public ClassB(List<String> list, Map<Integer, String> map, Set<Integer> set) {
+        this.list = list;
+        this.map = map;
+        this.set = set;
+    }
 
-    private static void function() {
-        if (VAR_1.contains("A")) {
-            System.out.println("...yes...");
-            if (var_2.contains("!")) {
-                System.out.println("Bingo!");
-            } else System.out.println("You're loser");
-        }
+    public void bar() {
+
     }
 
     private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -19,7 +25,6 @@ public class ClassB extends ClassA implements Interface {
     private static String randomAlphaNumeric(int count, String randomSource) {
         StringBuilder builder = new StringBuilder();
         while (count-- != 0) {
-
             int character = (int) (Math.random() * randomSource.length());
             builder.append(randomSource.charAt(character));
         }
@@ -27,20 +32,14 @@ public class ClassB extends ClassA implements Interface {
     }
 
     public static void main(String[] args) {
-        VAR_1 = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING);
-        var_2 = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING_2);
+        String one = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING);
+        String two = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING_2);
 
 
-        if (VAR_1.equals(var_2)) {
-            System.out.println("VAR_1 (" + VAR_1 + ") == var_2 (" + var_2 + ")");
+        if (one.equals(two)) {
+            System.out.println("one (" + one + ") == two (" + two + ")");
         } else {
-            System.out.println("VAR_1 (" + VAR_1 + ") != var_2 (" + var_2 + ")");
+            System.out.println("one (" + one + ") != two (" + two + ")");
         }
-
-        function();
-    }
-
-    public void function_1() {
-
     }
 }
