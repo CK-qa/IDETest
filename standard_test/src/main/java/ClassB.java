@@ -1,13 +1,13 @@
 public class ClassB extends ClassA implements Interface {
 
-    static String one;
-    static String two;
+    private static String VAR_1;
+    private static String var_2;
 
 
-    public static void function() {
-        if (one.contains("A")) {
+    private static void function() {
+        if (VAR_1.contains("A")) {
             System.out.println("...yes...");
-            if (two.contains("!")) {
+            if (var_2.contains("!")) {
                 System.out.println("Bingo!");
             } else System.out.println("You're loser");
         }
@@ -18,7 +18,7 @@ public class ClassB extends ClassA implements Interface {
 
     private static String randomAlphaNumeric(int count, String randomSource) {
         StringBuilder builder = new StringBuilder();
-        for (int i = count; i > 0 ; i--) {
+        while (count-- != 0) {
 
             int character = (int) (Math.random() * randomSource.length());
             builder.append(randomSource.charAt(character));
@@ -27,14 +27,14 @@ public class ClassB extends ClassA implements Interface {
     }
 
     public static void main(String[] args) {
-        one = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING);
-        two = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING_2);
+        VAR_1 = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING);
+        var_2 = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING_2);
 
 
-        if (one.equals(two)) {
-            System.out.println("one (" + one + ") == two (" + two + ")");
+        if (VAR_1.equals(var_2)) {
+            System.out.println("VAR_1 (" + VAR_1 + ") == var_2 (" + var_2 + ")");
         } else {
-            System.out.println("one (" + one + ") != two (" + two + ")");
+            System.out.println("VAR_1 (" + VAR_1 + ") != var_2 (" + var_2 + ")");
         }
 
         function();
