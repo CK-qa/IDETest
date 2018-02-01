@@ -19,6 +19,7 @@ public class ClassB extends ClassA implements Interface {
     private static String randomAlphaNumeric(int count, String randomSource) {
         StringBuilder builder = new StringBuilder();
         while (count-- != 0) {
+
             int character = (int) (Math.random() * randomSource.length());
             builder.append(randomSource.charAt(character));
         }
