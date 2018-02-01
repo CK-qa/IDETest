@@ -23,7 +23,8 @@ public class ClassB extends ClassA implements Interface {
 
     private static String randomAlphaNumeric(int count) {
         StringBuilder builder = new StringBuilder();
-        while (count-- != 0) {
+        for (int i = count; i > 0 ; i--) {
+
             int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
             builder.append(ALPHA_NUMERIC_STRING.charAt(character));
         }
@@ -35,9 +36,9 @@ public class ClassB extends ClassA implements Interface {
         String two = randomAlphaNumeric(5);
 
         if (one.equals(two)) {
-            System.out.println("one == two");
+            System.out.println("one is " + one + " and it's equal to two which is " + two);
         } else {
-            System.out.println("one != two");
+            System.out.println("one is " + one + " and it's not equal to two which is " + two);
         }
     }
 }
