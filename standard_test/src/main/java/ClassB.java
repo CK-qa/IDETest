@@ -20,24 +20,26 @@ public class ClassB extends ClassA implements Interface {
     }
 
     private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    private static final String ALPHA_NUMERIC_STRING_2 = "!@#$%^&*()_+";
 
-    private static String randomAlphaNumeric(int count) {
+    private static String randomAlphaNumeric(int count, String randomSource) {
         StringBuilder builder = new StringBuilder();
         while (count-- != 0) {
-            int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
-            builder.append(ALPHA_NUMERIC_STRING.charAt(character));
+            int character = (int) (Math.random() * randomSource.length());
+            builder.append(randomSource.charAt(character));
         }
         return builder.toString();
     }
 
     public static void main(String[] args) {
-        String one = randomAlphaNumeric(5);
-        String two = randomAlphaNumeric(5);
+        String one = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING);
+        String two = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING_2);
+
 
         if (one.equals(two)) {
-            System.out.println("one == two");
+            System.out.println("one (" + one + ") == two (" + two + ")");
         } else {
-            System.out.println("one != two");
+            System.out.println("one (" + one + ") != two (" + two + ")");
         }
     }
 }
