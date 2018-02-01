@@ -1,22 +1,16 @@
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.Set;
-
 public class ClassB extends ClassA implements Interface {
 
-    List<String> list;
-    Map<Integer, String> map;
-    Set<Integer> set;
+    static String one;
+    static String two;
 
-    public ClassB(List<String> list, Map<Integer, String> map, Set<Integer> set) {
-        this.list = list;
-        this.map = map;
-        this.set = set;
-    }
 
-    public void bar() {
-
+    public static void function() {
+        if (one.contains("A")) {
+            System.out.println("...yes...");
+            if (two.contains("!")) {
+                System.out.println("Bingo!");
+            } else System.out.println("You're loser");
+        }
     }
 
     private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -33,8 +27,8 @@ public class ClassB extends ClassA implements Interface {
     }
 
     public static void main(String[] args) {
-        String one = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING);
-        String two = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING_2);
+        one = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING);
+        two = randomAlphaNumeric(5, ALPHA_NUMERIC_STRING_2);
 
 
         if (one.equals(two)) {
@@ -44,5 +38,11 @@ public class ClassB extends ClassA implements Interface {
             System.out.println("one (" + one + ") != two (" + two + ")");
             System.out.println("one is " + one + " and it's not equal to two which is " + two);
         }
+
+        function();
+    }
+
+    public void function_1() {
+
     }
 }

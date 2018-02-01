@@ -1,5 +1,5 @@
 public interface Interface extends ParentInterface{
 
-    void bar();
+    void function_1();
 
 }
