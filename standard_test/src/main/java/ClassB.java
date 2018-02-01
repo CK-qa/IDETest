@@ -33,10 +33,8 @@ public class ClassB extends ClassA implements Interface {
 
         if (one.equals(two)) {
             System.out.println("one (" + one + ") == two (" + two + ")");
-            System.out.println("one is " + one + " and it's equal to two which is " + two);
         } else {
             System.out.println("one (" + one + ") != two (" + two + ")");
-            System.out.println("one is " + one + " and it's not equal to two which is " + two);
         }
 
         function();
