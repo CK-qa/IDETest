@@ -42,7 +42,7 @@ public class TestClass {
         }
     }
 
-    //region >>region<<
+    //region 2
     @Given("^there are (\\d+) cucumbers$")
     public void thereAreStartCucumbers(int start) {
         this.start = start;
