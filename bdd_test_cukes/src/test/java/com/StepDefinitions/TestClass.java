@@ -37,12 +37,9 @@ public class TestClass {
     public void everybodyHappy() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("Scenario step4: Yay!");
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i);
-        }
     }
 
-    //region 2
+    //region >>region<<
     @Given("^there are (\\d+) cucumbers$")
     public void thereAreStartCucumbers(int start) {
         this.start = start;
@@ -61,5 +58,6 @@ public class TestClass {
         System.out.println("Scenario outline step3: " + res + " items left");
         Assert.assertEquals(res, left);
     }
+    //endregion
     //endregion
 }
