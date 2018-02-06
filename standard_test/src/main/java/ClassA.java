@@ -5,7 +5,7 @@ public class ClassA implements ParentInterface {
     short sh;
     long l;
 
-    Integer in;
+    private Integer in;
     Float fl;
     Short shrt;
     Long lo;
@@ -16,6 +16,7 @@ public class ClassA implements ParentInterface {
     public int foo() {
         return i + in;
     }
+
 
 
 }

@@ -37,6 +37,9 @@ public class TestClass {
     public void everybodyHappy() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("Scenario step4: Yay!");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
     }
 
     //region 2

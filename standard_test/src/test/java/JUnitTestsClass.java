@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.assertNotNull;
 
 public class JUnitTestsClass {
 
@@ -35,5 +36,10 @@ public class JUnitTestsClass {
     @Test
     public void jUnitTestIgnored() {
         //ignore me
+    }
+
+    @Test
+    public void jUnitAssertNotNull() {
+        assertNotNull(getClass().getResource("test.resources"));
     }
 }
