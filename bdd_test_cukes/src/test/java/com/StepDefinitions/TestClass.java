@@ -18,9 +18,6 @@ public class TestClass {
     public void userHasItems(int number) {
         given = number;
         System.out.println("Scenario step1: User has " + given + " items");
-        for (int i = 0; i < 10; i++) {
-            
-        }
     }
 
     @When("^user loses (\\d+) items$")
@@ -40,9 +37,12 @@ public class TestClass {
     public void everybodyHappy() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("Scenario step4: Yay!");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
     }
 
-    //region >>region<<
+    //region 2
     @Given("^there are (\\d+) cucumbers$")
     public void thereAreStartCucumbers(int start) {
         this.start = start;
@@ -61,5 +61,4 @@ public class TestClass {
         System.out.println("Scenario outline step3: " + res + " items left");
         Assert.assertEquals(res, left);
     }
-    //endregion 
 }
