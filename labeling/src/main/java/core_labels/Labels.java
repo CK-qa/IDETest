@@ -1,18 +1,37 @@
 package core_labels;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.math.BigDecimal;
+import java.util.Scanner;
 
-public class Labels extends Parent {
+public class Labels {
 
-    static private List<String> lbls = new ArrayList<String>();
+    private static void oddNumbers() {
 
-    public static List<String> fillArr() {
-        for (int i = 0; i < 10; i++) {
-            lbls.add("L" + i);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number till which you wanna get odd numbers: ");
+        int num = scanner.nextInt();
+        int var;
+
+        for (var = 0; var <= num; var++) {
+            if (var%2 != 0) {
+                System.out.print(var + " ");
+            }
         }
-        return lbls;
+        System.out.println();
     }
 
+    private static void power() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        Integer num = scanner.nextInt();
+        System.out.println("Enter a power of the number: ");
+        Integer pow = scanner.nextInt();
 
+        System.out.println(BigDecimal.valueOf(Math.pow(num, pow)));
+    }
+
+    public static void main(String[] args) {
+        oddNumbers();
+        power();
+    }
 }
