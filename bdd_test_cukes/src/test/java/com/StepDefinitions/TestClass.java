@@ -42,7 +42,7 @@ public class TestClass {
         }
     }
 
-    //region 2
+    //region >>region<<
     @Given("^there are (\\d+) cucumbers$")
     public void thereAreStartCucumbers(int start) {
         this.start = start;
@@ -61,4 +61,5 @@ public class TestClass {
         System.out.println("Scenario outline step3: " + res + " items left");
         Assert.assertEquals(res, left);
     }
+    //endregion
 }
