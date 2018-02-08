@@ -24,6 +24,10 @@ public class TestSteps {
         stack.clear();
     }
 
+    /**
+     *
+     * @param elementCount todo
+     */
     @When("I add $number elements")
     public void addElements(int elementCount) {
         for (int i = 0; i < elementCount; i++) {
