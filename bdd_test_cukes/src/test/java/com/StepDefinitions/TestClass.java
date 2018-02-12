@@ -10,7 +10,7 @@ public class TestClass {
 
     private int given;
     private int minus;
-    private int start;
+    public int start;
     private int eat;
 
 
