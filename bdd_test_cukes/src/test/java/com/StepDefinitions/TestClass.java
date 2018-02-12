@@ -13,6 +13,7 @@ public class TestClass {
     private int start;
     private int eat;
 
+
     @Given("^user has (\\d+) items$")
     public void userHasItems(int number) {
         given = number;
