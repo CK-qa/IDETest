@@ -1,8 +1,6 @@
 package core_labels;
 
 import java.lang.annotation.Annotation;
-import java.math.BigDecimal;
-import java.util.Scanner;
 
 @AnnotationToTest(
         name = "Vika",
@@ -11,52 +9,14 @@ import java.util.Scanner;
 
 public class Calcs implements FInterface, AnnotationToTest {
 
-    private static void oddNumbers() {
-
-        Calcs calcs = new Calcs();
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number till which you wanna get odd numbers: ");
-        int num = scanner.nextInt();
-        int var;
-
-        for (var = 0; var <= num; var++) {
-            if (var%2 != 0) {
-                System.out.print(var + " ");
-            }
-        }
-    System.out.println();
-    }
-
-    /**
-     *
-     * @param a is just int
-     * @return sum of two ints
-     * @param a is just int
-     * @param a is just int
-     */
-    private static int method(int a) {
-        return a + a;
-    }
-
-    private static void power() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        Integer num = scanner.nextInt();
-        System.out.println("Enter a power of the number: ");
-        Integer pow = scanner.nextInt();
-
-        System.out.println(BigDecimal.valueOf(Math.pow(num, pow)));
-    }
-
     private static Calcs calcs = new Calcs();
 
     public static void main(String[] args) {
-
-        oddNumbers();
-        power();
+        MClass.oddNumbers();
+        MClass.power();
         calcs.anyCalc();
         calcs.doSomeOtherWork();
+        test(1,2,3, "4", true);
     }
 
     @Override
@@ -79,7 +39,10 @@ public class Calcs implements FInterface, AnnotationToTest {
         return null;
     }
 
-    private static void sort() {
-
+    private static void test(int a, int b, int c, String str, boolean bb) {
+        System.out.println(a + b + c + str + bb);
     }
+
+
+
 }
