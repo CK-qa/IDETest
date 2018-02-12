@@ -20,6 +20,10 @@ public class Calcs {
         System.out.println();
     }
 
+    private static int method(int a) {
+        return a + a;
+    }
+
     private static void power() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number: ");
