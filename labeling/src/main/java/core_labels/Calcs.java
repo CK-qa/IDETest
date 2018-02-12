@@ -34,4 +34,8 @@ public class Labels {
         oddNumbers();
         power();
     }
+
+    private static void sort() {
+
+    }
 }
