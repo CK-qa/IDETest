@@ -20,7 +20,8 @@ public class MClass {
         System.out.println();
     }
 
-    private static void power() {
+
+    public static void power() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number: ");
         Integer num = scanner.nextInt();
