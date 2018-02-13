@@ -16,6 +16,7 @@
         <module>python_stuff</module>
         <module>groovy_stuff</module>
         <module>go_test</module>
+        <module>selenium</module>
     </modules>
     <dependencies><dependency>
         <groupId>junit</groupId>
