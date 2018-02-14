@@ -18,5 +18,13 @@ public class ClassA implements ParentInterface {
     }
 
 
+    public void method() {
+        int a = 1;
+
+        int b = a + ClassB.intValue();
+        int c = b + ClassB.intValue();
+    }
+
+
 
 }

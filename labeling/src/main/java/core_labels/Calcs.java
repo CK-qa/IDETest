@@ -1,8 +1,9 @@
 package core_labels;
 
 import java.lang.annotation.Annotation;
-import java.math.BigDecimal;
 import java.util.Scanner;
+
+import static core_labels.MClass.power;
 
 @AnnotationToTest(
         name = "Vika",
@@ -39,15 +40,6 @@ public class Calcs implements FInterface, AnnotationToTest {
         return a + a;
     }
 
-    private static void power() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        Integer num = scanner.nextInt();
-        System.out.println("Enter a power of the number: ");
-        Integer pow = scanner.nextInt();
-
-        System.out.println(BigDecimal.valueOf(Math.pow(num, pow)));
-    }
 
     private static Calcs calcs = new Calcs();
 

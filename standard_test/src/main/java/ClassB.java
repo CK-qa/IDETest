@@ -42,6 +42,10 @@ public class ClassB extends ClassA implements Interface {
         function();
     }
 
+    public static int intValue() {
+        return 1;
+    }
+
     public void function_1() {
 
     }
