@@ -13,6 +13,7 @@ public class TestSteps {
 
     public TestSteps() {
         stack = new Stack<String>();
+
     }
 
     @Given("an empty stack")
@@ -28,6 +29,7 @@ public class TestSteps {
     public void addElements(int elementCount) {
         for (int i = 0; i < elementCount; i++) {
             stack.add((new Integer(i)).toString());
+            System.out.println("I add " + elementCount + " elements");
         }
     }
 
