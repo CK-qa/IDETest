@@ -25,9 +25,16 @@ public class Calcs implements FInterface, AnnotationToTest {
                 System.out.print(var + " ");
             }
         }
-        System.out.println();
+    System.out.println();
     }
 
+    /**
+     *
+     * @param a is just int
+     * @return sum of two ints
+     * @param a is just int
+     * @param a is just int
+     */
     private static int method(int a) {
         return a + a;
     }

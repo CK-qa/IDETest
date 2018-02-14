@@ -6,10 +6,10 @@ Feature:
 
   Scenario: items count
 
-    Given user has 100 items
-    When user loses 50 items
-    Then he has 50 items
-    And everybody happy
+  Given user has 100 items
+  When user loses 50 items
+  Then he has 50 items
+  And everybody happy
 
 
   Scenario: items count 2
@@ -18,7 +18,6 @@ Feature:
     When user loses 70 items
     Then he has 50 items
     And everybody happy
-
 
 
   Scenario Outline: items blala
@@ -30,8 +29,3 @@ Feature:
       | start | eat | left |
       |  12   |  5  |  7   |
       |  20   |  5  |  15  |
-
-
-
-
-
