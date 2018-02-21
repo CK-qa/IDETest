@@ -7,6 +7,8 @@ import org.junit.Assert;
 
 import java.util.Stack;
 
+import static org.hamcrest.core.IsEqual.equalTo;
+
 public class TestSteps {
 
     private Stack<String> stack;
@@ -35,7 +37,7 @@ public class TestSteps {
 
     @Then("the stack should have $number elements")
     public void assertElementCount(int elementCount) {
-        assertThat(stack.size(), equalTo(elementCount));
+        Assert.assertThat(stack.size(), equalTo(elementCount));
         Assert.assertEquals(stack.size(), elementCount);
     }
     /**
@@ -45,6 +47,6 @@ public class TestSteps {
 
     @Then("test it properly")
     public void testItProperly() {
-        assertFalse(false);
+        Assert.assertFalse(false);
     }
 }
