@@ -2,11 +2,11 @@ package core_labels;
 
 public class ShadowClass {
 
-    public int x = 0;
+    private int x = 0;
 
     class FirstLevel {
 
-        public int x = 1;
+        int x = 1;
 
         void methodInFirstLevel(int x) {
             System.out.println("x = " + x);
@@ -19,5 +19,8 @@ public class ShadowClass {
         ShadowClass st = new ShadowClass();
         ShadowClass.FirstLevel fl = st.new FirstLevel();
         fl.methodInFirstLevel(23);
+        fl.methodInFirstLevel(15);
     }
+
+
 }
