@@ -15,7 +15,11 @@ import org.junit.runner.RunWith;
         snippets = SnippetType.UNDERSCORE
 )
 
-public class RunnerTest {
+public class TestRunnerClass {
 
 
 }
+
+
+
+
