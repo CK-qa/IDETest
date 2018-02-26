@@ -13,7 +13,7 @@ public class MClass {
         int var;
 
         for (var = 0; var <= num; var++) {
-            if (var%2 != 0) {
+            if (var % 2 != 0) {
                 System.out.print(var + " ");
             }
         }
