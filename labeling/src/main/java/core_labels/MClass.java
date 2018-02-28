@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class MClass {
 
-    static void oddNumbers() {
+    private static void oddNumbers() {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number till which you wanna get odd numbers: ");
@@ -21,7 +21,7 @@ public class MClass {
     }
 
 
-    public static void power() {
+    static void power() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number: ");
         Integer num = scanner.nextInt();
