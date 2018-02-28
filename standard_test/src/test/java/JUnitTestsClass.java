@@ -1,5 +1,11 @@
 import org.junit.*;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertNotNull;
 
@@ -54,4 +60,16 @@ public class JUnitTestsClass {
         assertNotNull(getClass().getResource("test.resources"));
     }
 
+    @Test
+    public void testProperties() {
+        try {
+            Properties prop = new Properties();
+            InputStream is = JUnitTestsClass.class.getResourceAsStream("application.properties");
+            prop.load(is);
+            Assert.assertEquals(prop.getProperty("propertyName"), "propertyValue");
+            Assert.assertEquals(prop.getProperty("anotherPropertyName"), "anotherPropertyValue");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

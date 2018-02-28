@@ -27,34 +27,34 @@ public class TestNGTestsClass {
     @Test
     public void testNGTest() {
         System.out.println("testNGTest running");
-        Assert.assertEquals(1,1);
+        Assert.assertEquals(1, 1);
     }
 
     @Test
     public void testNGTestNegative() {
         System.out.println("testNGTestNegative running");
-        Assert.assertEquals(1,2);
+        Assert.assertEquals(1, 2);
     }
 
     @Test
     public void testNGTestRed() {
         System.out.println("testNGTestRed running");
-        int i = 1/0;
+        int i = 1 / 0;
         Assert.assertEquals(i, 1);
     }
 
     @Test(expectedExceptions = ArithmeticException.class)
     public void testNGTestExpectedException() {
         System.out.println("testNGTestExpectedException running");
-        int i = 1/0;
-        Assert.assertEquals(1,i);
+        int i = 1 / 0;
+        Assert.assertEquals(1, i);
     }
 
     @Ignore
     @Test
     public void testNGTestIgnored() {
         System.out.println("testNGTestIgnored running");
-        int i = 1/0;
-        Assert.assertEquals(1,i);
+        int i = 1 / 0;
+        Assert.assertEquals(1, i);
     }
 }
