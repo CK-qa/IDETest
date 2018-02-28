@@ -63,5 +63,4 @@ public class TestClass {
         Assert.assertEquals(res, left);
     }
     //endregion
-    //endregion
 }
