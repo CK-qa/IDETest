@@ -1,7 +1,11 @@
-public class ClassB extends ClassA implements Interface {
+public class ClassBi extends ClassA implements Interface {
 
     static String one;
     static String two;
+
+    public ClassBi(int i, float f, short sh, long l) {
+        super(i, f, sh, l);
+    }
 
 
     public static void function() {
@@ -48,5 +52,9 @@ public class ClassB extends ClassA implements Interface {
 
     public void function_1() {
 
+    }
+
+    public static String getOne() {
+        return one;
     }
 }

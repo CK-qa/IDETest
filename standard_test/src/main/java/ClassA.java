@@ -21,7 +21,7 @@ public class ClassA implements ParentInterface {
     public void method() {
         int a = 1;
 
-        final int i = ClassB.intValue();
+        final int i = ClassBi.intValue();
         int b = a + i;
         int c = b + i;
     }
@@ -37,7 +37,7 @@ public class ClassA implements ParentInterface {
         return shrt;
     }
 
-    public void setShrt(Float fl) {
+    public void setShrta(Float fl) {
         this.fl = fl;
     }
 }
