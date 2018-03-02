@@ -37,7 +37,7 @@ public class ClassA implements ParentInterface {
         return shrt;
     }
 
-    public void setShrt(Short shrt) {
-        this.shrt = shrt;
+    public void setShrt(Float fl) {
+        this.fl = fl;
     }
 }
