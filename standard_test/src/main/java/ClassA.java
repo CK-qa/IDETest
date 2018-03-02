@@ -26,6 +26,18 @@ public class ClassA implements ParentInterface {
         int c = b + i;
     }
 
+    public ClassA(int i, float f, short sh, long l) {
+        this.i = i;
+        this.f = f;
+        this.sh = sh;
+        this.l = l;
+    }
 
+    public Short getShrt() {
+        return shrt;
+    }
 
+    public void setShrt(Short shrt) {
+        this.shrt = shrt;
+    }
 }
