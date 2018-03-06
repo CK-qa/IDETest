@@ -22,7 +22,7 @@ public class ClassBi extends ClassA implements Interface {
 
     private static String randomAlphaNumeric(int count, String randomSource) {
         StringBuilder builder = new StringBuilder();
-        for (int i = count; i > 0 ; i--) {
+        for (int i = count; i > 0; i--) {
 
             int character = (int) (Math.random() * randomSource.length());
             builder.append(randomSource.charAt(character));
