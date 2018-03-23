@@ -15,6 +15,7 @@
         <module>labeling</module>
         <module>python_stuff</module>
         <module>groovy_stuff</module>
+        <module>go_test</module>
     </modules>
     <dependencies><dependency>
         <groupId>junit</groupId>
