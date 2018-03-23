@@ -51,4 +51,5 @@ func forcycle() {
 		}
 		fmt.Println(n)
 	}
+
 }
