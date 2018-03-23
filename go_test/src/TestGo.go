@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	fmt.Println("hello world")
 	other()
-	forcycle()
+	for_cycle()
 }
 
 func other() {
@@ -29,7 +29,7 @@ func other() {
 	fmt.Println(f)
 }
 
-func forcycle() {
+func for_cycle() {
 	i := 1
 	for i <= 3 {
 		fmt.Println(i)
