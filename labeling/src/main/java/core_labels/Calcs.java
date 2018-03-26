@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import static core_labels.MClass.power;
 
+@SuppressWarnings("ALL")
 @AnnotationToTest(
         name = "Vika",
         purpose = ""
@@ -57,6 +58,11 @@ public class Calcs implements FInterface, AnnotationToTest {
     }
 
     @Override
+    public Class<? extends Annotation> annotationType() {
+        return null;
+    }
+
+    @Override
     public String name() {
         return null;
     }
@@ -66,8 +72,11 @@ public class Calcs implements FInterface, AnnotationToTest {
         return null;
     }
 
-    @Override
-    public Class<? extends Annotation> annotationType() {
-        return null;
+    public void pew() {
+        pewpew("15");
+    }
+
+    private String pewpew(String s) {
+        return s;
     }
 }

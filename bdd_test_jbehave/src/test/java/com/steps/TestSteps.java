@@ -8,8 +8,6 @@ import org.junit.Assert;
 import java.util.Stack;
 
 import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertThat;
 
 public class TestSteps {
 
@@ -43,6 +41,7 @@ public class TestSteps {
         Assert.assertEquals(stack.size(), elementCount);
     }
     /**
+     * foo
      * foo
      * foo
      */
