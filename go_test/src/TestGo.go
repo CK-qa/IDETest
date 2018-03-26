@@ -23,7 +23,7 @@ func other() {
 
 	var e int
 	fmt.Println(e)
-	//The := syntax is shorthand for declaring and initializing a variable, e.g. for var f string = "short" in this case.
+	//the := syntax is shorthand for declaring and initializing a variable, e.g. for var f string = "short" in this case.
 
 	f := "short"
 	fmt.Println(f)
