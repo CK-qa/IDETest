@@ -1,7 +1,9 @@
+import javafx.scene.Parent;
+
 import java.util.List;
 import java.util.Map;
 
-public class ChildCLass extends ParentClass {
+public class ChildCLass extends Parent {
 
     private static String str;
     int a;
