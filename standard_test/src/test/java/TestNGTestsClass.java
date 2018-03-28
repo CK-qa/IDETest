@@ -57,4 +57,11 @@ public class TestNGTestsClass {
         int i = 1 / 0;
         Assert.assertEquals(1, i);
     }
+
+    @Test(successPercentage = 99, invocationCount = 5)
+    public void testNGWithPercentage10() {
+        for (int i = 0; i < 10; i++) {
+            Assert.assertTrue(i < 5);
+        }
+    }
 }
