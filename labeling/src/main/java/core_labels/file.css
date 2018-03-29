@@ -1,3 +1,6 @@
 div {
-  color: darkolivegreen;
+    color: darkolivegreen;
+    background-color: black;
+    border-bottom-color: aliceblue;
+    border-left-color: darkmagenta;
 }

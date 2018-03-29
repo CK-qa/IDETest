@@ -1,6 +1,6 @@
 package core_labels;
 
-public abstract class Parent {
+public abstract class ParentCl {
 
     /**
      * Hello
@@ -15,7 +15,7 @@ public abstract class Parent {
      * <p>
      * want to testi it?
      * <p>
-     * pewpewla
+     * pewpew
      */
     public void test() {
 

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/java/com/features",
         glue = "com.StepDefinitions",
         //tags = "@all",
-        dryRun = true,
+        dryRun = false,
         strict = false,
         snippets = SnippetType.UNDERSCORE
 )
