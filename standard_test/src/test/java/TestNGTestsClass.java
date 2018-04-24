@@ -64,4 +64,8 @@ public class TestNGTestsClass {
             Assert.assertTrue(i < 5);
         }
     }
+
+    @Test
+    public void sum() {
+        Assert.assertEquals(1,1);    }
 }
