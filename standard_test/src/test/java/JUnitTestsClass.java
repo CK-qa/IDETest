@@ -54,7 +54,6 @@ public class JUnitTestsClass {
         System.out.println("jUnitTestIgnored running");
         //ignore me
     }
-
     @Test
     public void jUnitAssertNotNull() {
         assertNotNull(getClass().getResource("test.resources"));

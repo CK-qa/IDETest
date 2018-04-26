@@ -1,6 +1,6 @@
 class GroovyClass {
 
-    static void sum(int a, int b) {
+    static void summ(int a, int b) {
         println("Groovy class is executing...")
         int c = a + b
         println("Sum result of " + a + " and " + b + " is: ")
@@ -8,6 +8,6 @@ class GroovyClass {
     }
 
     static void main(String[] args) {
-        sum(1, 7)
+        summ(1, 7)
     }
 }

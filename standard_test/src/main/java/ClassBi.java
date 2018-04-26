@@ -57,4 +57,13 @@ public class ClassBi extends ClassA implements Interface {
     public static String getOne() {
         return one;
     }
+
+    public class Dummy {
+        void caller(String someString, int number) {
+            toComplete(ClassBi.this.toString(), number);
+        }
+        void toComplete(String someString, int number) {
+
+        }
+    }
 }
