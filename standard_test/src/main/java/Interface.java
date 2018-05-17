@@ -12,9 +12,10 @@ public interface Interface extends ParentInterface {
      *        return node.getNodeName().equals("notes") &&
      *               node instanceof Element;
      *    }
-     * };
+     * }
      * }
      * </pre>
      */
     void function_1();
+    
 }
