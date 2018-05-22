@@ -35,4 +35,9 @@ public class MClass {
         oddNumbers();
         power();
     }
+
+    public int testik(int a, int b) {
+        return a + b;
+    }
+
 }
