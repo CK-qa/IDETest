@@ -7,8 +7,8 @@ import static core_labels.MClass.power;
 
 @SuppressWarnings("ALL")
 @AnnotationToTest(
-      name = "Vika",
-      purpose = ""
+        name = "Vika",
+        purpose = ""
 )
 
 public class Calcs implements FInterface, AnnotationToTest {
@@ -18,7 +18,7 @@ public class Calcs implements FInterface, AnnotationToTest {
         Calcs calcs = new Calcs();
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter any number to get odd numbers before it:\t");
+        System.out.print("Enter some number till which you want to get odd numbers:\t");
         int num = scanner.nextInt();
         int var;
 
@@ -32,9 +32,7 @@ public class Calcs implements FInterface, AnnotationToTest {
 
     /**
      * @param a is just int
-     * @param a is just int
-     * @param a is just int
-     * @return sum of two ints
+     * @return sum of two a's
      */
     private static int method(int a) {
         return a + a;
@@ -44,7 +42,6 @@ public class Calcs implements FInterface, AnnotationToTest {
     private static Calcs calcs = new Calcs();
 
     public static void main(String[] args) {
-
         oddNumbers();
         power();
         calcs.anyCalc();
