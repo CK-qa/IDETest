@@ -12,12 +12,12 @@ public class JUnitTestsClass {
 
     @Before
     public void beforeClass() {
-        System.out.println("Before Method");
+        System.out.println("This should be printed Before Method execution");
     }
 
     @After
     public void afterClass() {
-        System.out.println("After Method\n");
+        System.out.println("This should be printed After Method execution\n");
     }
 
     @Test
