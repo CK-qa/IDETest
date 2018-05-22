@@ -18,24 +18,21 @@ public class Calcs implements FInterface, AnnotationToTest {
         Calcs calcs = new Calcs();
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number till which you wanna get odd numbers: ");
+        System.out.print("Enter some number till which you want to get odd numbers:\t");
         int num = scanner.nextInt();
         int var;
 
         for (var = 0; var <= num; var++) {
-            if (var%2 != 0) {
+            if (var % 2 != 0) {
                 System.out.print(var + " ");
             }
         }
-    System.out.println();
+        System.out.println();
     }
 
     /**
-     *
      * @param a is just int
-     * @return sum of two ints
-     * @param a is just int
-     * @param a is just int
+     * @return sum of two a's
      */
     private static int method(int a) {
         return a + a;
@@ -45,7 +42,6 @@ public class Calcs implements FInterface, AnnotationToTest {
     private static Calcs calcs = new Calcs();
 
     public static void main(String[] args) {
-
         oddNumbers();
         power();
         calcs.anyCalc();
