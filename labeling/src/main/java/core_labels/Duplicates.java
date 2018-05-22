@@ -13,4 +13,20 @@ public class Duplicates {
     public static void main(String[] args) {
         test0(1, 2);
     }
+
+    public void test(WrappingLines wrappingLines) {
+
+    }
+
+    public void test1(WrappingLines wrappingLines) {
+
+    }
+
+    public void test2(WrappingLines wrappingLines) {
+
+    }
+
+    public void test3(WrappingLines wrappingLines) {
+
+    }
 }
