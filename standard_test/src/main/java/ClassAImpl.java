@@ -11,7 +11,7 @@ public class ClassAImpl extends ClassA {
     public void transform() {
     }
 
-    public void method(String one) {
+    public static void method(String one) {
     }
 
     public void method(String one, String two) {
@@ -19,5 +19,14 @@ public class ClassAImpl extends ClassA {
 
     public void method(String one, String two, String three) {
     }
+
+    public void test() {
+        method("ssdsdsdsssdsdjhjhd");
+    }
+
+    public static void main(String[] args) {
+        method("pewpввввewрврврetetet");
+    }
+
 }
 
