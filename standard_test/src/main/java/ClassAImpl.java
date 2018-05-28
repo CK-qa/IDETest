@@ -12,6 +12,8 @@ public class ClassAImpl extends ClassA {
     }
 
     public static void method(String one) {
+        String two = one + "lalala";
+        String three = two + "pewpew";
     }
 
     public void method(String one, String two) {
@@ -21,12 +23,17 @@ public class ClassAImpl extends ClassA {
     }
 
     public void test() {
+        show();
+
         method("ssdsdsdsssdsdjhjhd");
     }
 
     public static void main(String[] args) {
         method("pewpввввewрврврetetet");
     }
+
+    @Override
+    void show() { System.out.println("Child's show()"); }
 
 }
 

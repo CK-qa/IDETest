@@ -29,4 +29,7 @@ public class Duplicates {
     public void test3(WrappingLines wrappingLines) {
 
     }
+
+    public void test() {
+        System.out.println("tetete");    }
 }

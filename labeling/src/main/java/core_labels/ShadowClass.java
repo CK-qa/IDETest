@@ -20,7 +20,6 @@ public class ShadowClass {
         ShadowClass.FirstLevel fl = st.new FirstLevel();
         fl.methodInFirstLevel(23);
         fl.methodInFirstLevel(15);
+
     }
-
-
 }

@@ -10,6 +10,7 @@ public class ClassA implements ParentInterface {
     Short shrt;
     Long lo;
 
+
     String s;
     String str = "String";
 
@@ -17,6 +18,7 @@ public class ClassA implements ParentInterface {
         return i + in;
     }
 
+    void show() { System.out.println("Parent's show()"); }
 
     public void method() {
         int a = 1;
@@ -34,6 +36,7 @@ public class ClassA implements ParentInterface {
     }
 
     public Short getShrt() {
+        show();
         return shrt;
     }
 

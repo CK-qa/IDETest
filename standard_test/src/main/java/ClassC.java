@@ -7,35 +7,35 @@ import java.util.List;
 public class ClassC {
 
     void method() {
-        String c = "ololo111111";
+        String c = "pewpew111111";
     }
 
-    String c1 = "ololo111111";
-    String c2 = "ololo111111";
-    String c3 = "ololo111111";
-    String c4 = "ololo111111";
+    String c1 = "pewpew111111";
+    String c2 = "pewpew111111";
+    String c3 = "pewpew111111";
+    String c4 = "pewpew111111";
 
     void method1() {
-        String c5 = "ololo111111";
+        String c5 = "pewpew111111";
     }
 
-    String c6 = "ololo111111";
-    String c7 = "ololo111111";
-    String c8 = "ololo111111";
-    String c9 = "ololo1111111";
-    String c10 = "ololo111111";
-    String c11 = "ololo1111111";
+    String c6 = "pewpew111111";
+    String c7 = "pewpew111111";
+    String c8 = "pewpew111111";
+    String c9 = "pewpew1111111";
+    String c10 = "pewpew111111";
+    String c11 = "pewpew1111111";
 
     void test() {
-        System.out.println("ololo1111111");
+        System.out.println("pewpew1111111");
     }
 
-    String c13 = "ololo1111111";
-    String c14 = "ololo1111111";
-    String c15 = "ololo1111111";
-    String c16 = "ololo1111111";
-    String c17 = "ololo1111111";
-    String c18 = "ololo1111111";
+    String c13 = "pewpew1111111";
+    String c14 = "pewpew1111111";
+    String c15 = "pewpew1111111";
+    String c16 = "pewpew1111111";
+    String c17 = "pewpew1111111";
+    String c18 = "pewpew1111111";
 
     public void foo() {
         for (
