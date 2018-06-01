@@ -41,7 +41,6 @@ public class SeleniumSimpleTest {
         assertTrue("The page title should start with the search string after the search.", true);
     }
 
-
     private class ScreenshotHelper {
 
         public void saveScreenshot(String screenshotFileName) throws IOException {

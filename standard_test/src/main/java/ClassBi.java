@@ -133,6 +133,11 @@ public class ClassBi extends ClassA implements Interface {
     }
 
     @Override
+    void show() {
+        super.show();
+    }
+
+    @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
     }

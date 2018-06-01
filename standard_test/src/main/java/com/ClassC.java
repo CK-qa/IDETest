@@ -1,3 +1,5 @@
+package com;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,7 +9,7 @@ import java.util.List;
 public class ClassC {
 
     void method() {
-        String c = "pewpew111111";
+        String c = "lalaw111111";
     }
 
     String c1 = "pewpew111111";
@@ -44,7 +46,7 @@ public class ClassC {
                 i++
         ) {
             for (
-                    int j = 0; j < 11; j++
+                    int j = 0; j < 13; j++
             ) {
                 System.out.println(c1);
             }

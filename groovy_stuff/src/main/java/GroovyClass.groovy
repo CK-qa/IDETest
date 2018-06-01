@@ -8,6 +8,11 @@ class GroovyClass {
     }
 
     static void main(String[] args) {
-        summ(1, 7)
+        summ(1,7)
+    }
+
+    static void meth(){
+
+        assert format('String') == 'String'
     }
 }

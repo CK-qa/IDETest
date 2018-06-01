@@ -15,21 +15,21 @@ public class TestClass {
 
 
     @Given("^user has (\\d+) items$")
-    public void userHasItems(int number) {
+    public void userHasItems(Integer number) {
         given = number;
         System.out.println("Scenario step1: User has " + given + " items");
 
     }
 
     @When("^user loses (\\d+) items$")
-    public void userLosesItems(int number) {
+    public void userLosesItems(Integer number) {
         minus = number;
         System.out.println("Scenario step2: User loses " + minus + " items");
     }
 
     @Then("^he has (\\d+) items$")
-    public void heHasItems(int number) {
-        int result = given - minus;
+    public void heHasItems(Integer number) {
+        Integer result = given - minus;
         Assert.assertEquals(number, result);
         System.out.println("Scenario step3: " + number + " items left");
     }
@@ -64,3 +64,4 @@ public class TestClass {
     }
     //endregion
 }
+
