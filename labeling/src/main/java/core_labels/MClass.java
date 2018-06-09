@@ -20,6 +20,7 @@ public class MClass {
         System.out.println();
     }
 
+    String s = "<head><body><title>Lalalala</title></body></head>";
 
     static void power() {
         Scanner scanner = new Scanner(System.in);
@@ -36,7 +37,7 @@ public class MClass {
         power();
     }
 
-    public int testik(int a, int b) {
+    int testik(int a, int b) {
         return a + b;
     }
 
