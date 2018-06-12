@@ -11,7 +11,8 @@ public class ClassA implements ParentInterface {
     Long lo;
 
 
-    String s;
+
+    String s = " ";
     String str = "String";
 
     public int foo() {

@@ -18,7 +18,6 @@ public class TestClass {
     public void userHasItems(Integer number) {
         given = number;
         System.out.println("Scenario step1: User has " + given + " items");
-
     }
 
     @When("^user loses (\\d+) items$")
