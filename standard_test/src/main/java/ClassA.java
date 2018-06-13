@@ -43,6 +43,8 @@ public class ClassA implements ParentInterface {
     public void setShrta(Float fl) {
         this.fl = fl;
     }
+
+    
 }
 
 
