@@ -69,10 +69,10 @@ public class Calcs implements FInterface, AnnotationToTest {
     }
 
     public void pew() {
-        pewpewTest("15");
+        ololoTest("15");
     }
 
-    private String pewpewTest(String s) {
+    private String ololoTest(String s) {
         return s;
     }
 }
