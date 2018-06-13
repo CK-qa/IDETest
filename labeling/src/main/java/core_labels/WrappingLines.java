@@ -6,7 +6,7 @@ public class WrappingLines extends Duplicates {
         for (String arg : args) {
             System.out.println(arg);
             for (int j = 0; j < 10; j++) {
-                System.out.println("pewpew");
+                System.out.println("ololo");
             }
         }
     }

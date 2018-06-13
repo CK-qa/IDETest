@@ -13,7 +13,7 @@ public class ClassAImpl extends ClassA {
 
     public static void method(String one) {
         String two = one + "lalala";
-        String three = two + "pewpew";
+        String three = two + "ololo";
     }
 
     public void method(String one, String two) {
