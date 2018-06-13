@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClassC {
+public class ClassC extends Demo {
 
     void method() {
         String c = "lalaw111111";
@@ -37,7 +37,7 @@ public class ClassC {
     String c15 = "pewpew1111111";
     String c16 = "pewpew1111111";
     String c17 = "pewpew1111111";
-    String c18 = "pewpew1111111";
+    static String c18 = "pewpew1111111";
 
     public void foo() {
         for (
