@@ -5,6 +5,6 @@ public class CodeClass {
     }
 
     public static void main(String[] args) {
-        System.out.println(bar("pewpew"));
+        System.out.println(bar("olololo"));
     }
 }
