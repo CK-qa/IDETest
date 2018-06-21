@@ -10,16 +10,25 @@ public class ClassA implements ParentInterface {
     Short shrt;
     Long lo;
 
+    public String sss() {
+        return null;
+    }
 
+    @Override
+    public int aaa() {
+        return 0;
+    }
 
     String s = " ";
-    String str = "String";
+    String str = "./*String";
 
     public int foo() {
         return i + in;
     }
 
-    void show() { System.out.println("Parent's show()"); }
+    void show() {
+        System.out.println("Parent's show()");
+    }
 
     public void method() {
         int a = 1;
@@ -42,9 +51,6 @@ public class ClassA implements ParentInterface {
 
     public void setShrta(Float fl) {
         this.fl = fl;
+
     }
-
-    
 }
-
-

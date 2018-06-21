@@ -16,6 +16,6 @@ public interface Interface extends ParentInterface {
      * }
      * </pre>
      */
-    void function_1();
+    void function_2();
     
 }

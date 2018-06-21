@@ -1,5 +1,7 @@
 package core_labels;
 
+import org.junit.Test;
+
 import java.lang.annotation.Annotation;
 import java.util.Scanner;
 
@@ -12,6 +14,13 @@ import static core_labels.MClass.power;
 )
 
 public class Calcs implements FInterface, AnnotationToTest {
+
+    @Override
+    public void doSomeOtherWork() {
+        do {
+            System.out.println();
+        } while (true);
+    }
 
     private static void oddNumbers() {
 
@@ -34,6 +43,7 @@ public class Calcs implements FInterface, AnnotationToTest {
      * @param a is just int
      * @return sum of two a's
      */
+
     private static int method(int a) {
         return a + a;
     }
@@ -47,6 +57,7 @@ public class Calcs implements FInterface, AnnotationToTest {
         calcs.anyCalc();
         calcs.doSomeOtherWork();
     }
+
 
     @Override
     public void anyCalc() {
