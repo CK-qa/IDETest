@@ -5,12 +5,14 @@ def table_of_mult():
     d = int(input())
 
     i: int
-    print('\t' + str(c) + '\t' + str(d))
+    j: int
+    for j in range(c, d + 1):
+        print(str(j) + '\t')
     for i in range(a, b + 1):
-        print(str(i) + '\t')
-
-
-
+        if c != d:
+            print(str(i) + '\t' + str(i * j) + '\t' + str(i * j))
+        else:
+            print(str(i) + '\t' + str(i * j))
 
 
 table_of_mult()

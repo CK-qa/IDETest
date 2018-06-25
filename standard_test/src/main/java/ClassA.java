@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class ClassA implements ParentInterface {
 
     int i;
@@ -53,4 +55,13 @@ public class ClassA implements ParentInterface {
         this.fl = fl;
 
     }
+
+    public void ttt(List list) {
+
+    }
+
+    public void methWithParams(int integer, int integer2, String string, Object object, boolean boo, Integer intgr) {
+
+    }
+
 }
