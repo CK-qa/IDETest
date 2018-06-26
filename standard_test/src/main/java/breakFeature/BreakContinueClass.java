@@ -49,14 +49,14 @@ public class BreakContinueClass {
         }
 
         public void doWhileLoopBreak() {
-            List<String> list = Arrays.asList("pewpew", "lalalal", "ololol");
+            List<String> list = Arrays.asList("pewpew", "lalalal", "pewpewl");
             do {
                 for (String blah: list) {
                     if (blah.equals("pewpew")) {
                         break; // move on to next iteration
                     }
 
-                    if (blah.equals("ololo")) {
+                    if (blah.equals("pewpew")) {
                         list.remove(blah);
                     }
                 }
@@ -150,7 +150,7 @@ public class BreakContinueClass {
         }
 
         public void labeledDoWhileLoopBreak() {
-            List<String> list = Arrays.asList("pewpew", "lalalal", "ololol");
+            List<String> list = Arrays.asList("pewpew", "lalalal", "pewpewl");
             do {
                 pewpew:
                 for (String blah: list) {
@@ -158,7 +158,7 @@ public class BreakContinueClass {
                         break pewpew; // move on to next iteration
                     }
 
-                    if (blah.equals("ololo")) {
+                    if (blah.equals("pewpew")) {
                         list.remove(blah);
                     }
                 }

@@ -31,5 +31,5 @@ public class Duplicates {
     }
 
     public void test() {
-        System.out.println("tetete");    }
+        System.out.println("pewpew");    }
 }

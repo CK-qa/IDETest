@@ -60,7 +60,7 @@ public class ClassA implements ParentInterface {
 
     }
 
-    public void methWithParams(int integer, int integer2, String string, Object object, boolean boo, Integer intgr) {
+    public void methWithParams(int integer, int integer2, String string, Object object, boolean boolik, Integer intgr) {
 
     }
 

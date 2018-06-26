@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("helllo world")
+	fmt.Println("hello world")
 	otherVarFunc()
 	forCycleFun()
 }

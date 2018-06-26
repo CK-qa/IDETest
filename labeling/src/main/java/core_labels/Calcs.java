@@ -58,7 +58,6 @@ public class Calcs implements FInterface, AnnotationToTest {
         calcs.doSomeOtherWork();
     }
 
-
     @Override
     public void anyCalc() {
         System.out.println(Math.log10(100));
@@ -80,10 +79,10 @@ public class Calcs implements FInterface, AnnotationToTest {
     }
 
     public void pew() {
-        ololoTest("15");
+        pewpewTest("15");
     }
 
-    private String ololoTest(String s) {
+    private String pewpewTest(String s) {
         return s;
     }
 }
