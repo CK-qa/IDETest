@@ -1,5 +1,6 @@
 package core_labels;
 
+
 import java.math.BigDecimal;
 import java.util.Scanner;
 
@@ -19,6 +20,7 @@ public class MClass {
         }
         System.out.println();
     }
+
 
     String s = "<head><body><title>Lalalala</title></body></head>";
 

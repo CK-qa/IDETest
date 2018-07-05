@@ -32,6 +32,8 @@ public class ClassA implements ParentInterface {
         System.out.println("Parent's show()");
     }
 
+
+
     public void method() {
         int a = 1;
         final int i = ClassBi.intValue();
@@ -57,11 +59,13 @@ public class ClassA implements ParentInterface {
     }
 
     public void ttt(List list) {
+    }
+
+    public void methodWithParams(int int1, int int2, String string3, Object object4, boolean boolean5, Integer integer6) {
 
     }
 
-    public void methWithParams(int integer, int integer2, String string, Object object, boolean boolik, Integer intgr) {
 
-    }
+
 
 }
