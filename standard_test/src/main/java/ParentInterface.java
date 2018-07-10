@@ -2,5 +2,7 @@ public interface ParentInterface {
 
     String sss();
 
-    int aaa();
+    int abs();
+
+
 }

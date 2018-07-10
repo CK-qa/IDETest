@@ -6,3 +6,4 @@ def main(args: Array[String]): Unit = {
   squareOf(5)
 }
 
+

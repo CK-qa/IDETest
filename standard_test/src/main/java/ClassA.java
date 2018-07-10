@@ -17,7 +17,7 @@ public class ClassA implements ParentInterface {
     }
 
     @Override
-    public int aaa() {
+    public int abs() {
         return 0;
     }
 
