@@ -33,5 +33,7 @@ public class ClassAImpl extends ClassA {
     }
 
     @Override
-    void show() { System.out.println("Child's show()"); }
+    void show() {
+        System.out.println("Child's show()");
+    }
 }

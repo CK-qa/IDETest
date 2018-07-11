@@ -1,5 +1,6 @@
 public class ClassA implements ParentInterface {
 
+    static String moveUp;
     int i;
     float f;
     short sh;
@@ -13,7 +14,7 @@ public class ClassA implements ParentInterface {
 
 
     String s = " ";
-    String str = "String";
+    String str = ".//*String";
 
     public int foo() {
         return i + in;

@@ -13,7 +13,7 @@ public class WrappingLines extends Duplicates {
 
     @Override
 
-    public void test() {
-        super.test();
+    public void testok() {
+        super.testok();
     }
 }

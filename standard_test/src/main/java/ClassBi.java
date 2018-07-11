@@ -1,7 +1,10 @@
+import javax.xml.transform.sax.SAXSource;
+
 public class ClassBi extends ClassA implements Interface {
 
     static String one;
     static String two;
+    static String moveDown;
 
     public ClassBi(int i, float f, short sh, long l) {
         super(i, f, sh, l);

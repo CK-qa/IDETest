@@ -2,7 +2,7 @@ package core_labels;
 
 public class Duplicates {
 
-    public int test(int a, int b) {
+    public int testok(int a, int b) {
         return a + b;
     }
 
@@ -14,22 +14,35 @@ public class Duplicates {
         test0(1, 2);
     }
 
-    public void test(WrappingLines wrappingLines) {
-
+    public int test01(int c, int d) {
+        return c + d;
     }
 
-    public void test1(WrappingLines wrappingLines) {
-
+    public int test1(int c, int d) {
+        return c + d;
     }
 
-    public void test2(WrappingLines wrappingLines) {
-
+    public int test2(int c, int d) {
+        return c + d;
     }
 
-    public void test3(WrappingLines wrappingLines) {
 
+
+    public int test3(int c, int d) {
+        return c + d;
     }
 
-    public void test() {
-        System.out.println("tetete");    }
+    public void testok() {
+        System.out.println("tetete");
+    }
+/**
+ * IntelliJ IDEA 2018.3 EAP (Ultimate Edition)
+ * Build #IU-183.614, built on July 6, 2018
+ * IntelliJ IDEA EAP User
+ * Expiration date: August 5, 2018
+ * JRE: 1.8.0_152-release-1290-b3 amd64
+ * JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+ * Linux 4.15.0-20-generic
+ */
 }
+
