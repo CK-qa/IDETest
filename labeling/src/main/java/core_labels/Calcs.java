@@ -1,9 +1,11 @@
 package core_labels;
 
 import java.lang.annotation.Annotation;
+import java.util.Map;
 import java.util.Scanner;
 
 import static core_labels.MClass.power;
+
 
 @SuppressWarnings("ALL")
 @AnnotationToTest(
@@ -12,6 +14,18 @@ import static core_labels.MClass.power;
 )
 
 public class Calcs implements FInterface, AnnotationToTest {
+
+    /**
+     * Shortcut method for EntryDto items. This method will fetch the id from {@code item} and pass it to
+     * {@link #test2(Object, Object, Object, Object, Object)}. Make sure the dto item returns a non-null id.
+     */
+
+    @Override
+    public void doSomeOtherWork() {
+        do {
+            System.out.println();
+        } while (true);
+    }
 
     private static void oddNumbers() {
 
@@ -30,16 +44,11 @@ public class Calcs implements FInterface, AnnotationToTest {
         System.out.println();
     }
 
-    /**
-     * @param a is just int
-     * @return sum of two a's
-     */
+    private static Calcs calcs = new Calcs();
+
     private static int method(int a) {
         return a + a;
     }
-
-
-    private static Calcs calcs = new Calcs();
 
     public static void main(String[] args) {
         oddNumbers();
@@ -53,10 +62,17 @@ public class Calcs implements FInterface, AnnotationToTest {
         System.out.println(Math.log10(100));
     }
 
+    /**
+     * @param a is just int
+     * @return sum of two a's
+     */
+
+
     @Override
     public Class<? extends Annotation> annotationType() {
         return null;
     }
+
 
     @Override
     public String name() {
@@ -69,10 +85,12 @@ public class Calcs implements FInterface, AnnotationToTest {
     }
 
     public void pew() {
-        ololoTest("15");
+        pewpewTest("15");
     }
 
-    private String ololoTest(String s) {
+    private String pewpewTest(String s) {
         return s;
     }
+
+
 }

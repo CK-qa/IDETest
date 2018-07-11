@@ -53,13 +53,15 @@ public class ClassBi extends ClassA implements Interface {
         return 1;
     }
 
-    public void function_1() {
+    public void function_2() {
 
     }
 
     public static String getOne() {
         return one;
     }
+
+
 
     /*
      * pre: none
@@ -109,19 +111,17 @@ public class ClassBi extends ClassA implements Interface {
         }
 
         void toComplete(String someString, int number) {
-
         }
     }
 
-    boolean foo = true;
+    volatile boolean foo = true;
 
     public boolean hasInvalidResults() {
         return (foo || false);
     }
 
     public void whileIndent() {
-        while (foo &&
-               true) {
+        while (foo) {
         }
     }
 

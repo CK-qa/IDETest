@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class ClassA implements ParentInterface {
 
     static String moveUp;
@@ -11,16 +13,25 @@ public class ClassA implements ParentInterface {
     Short shrt;
     Long lo;
 
+    public String sss() {
+        return null;
+    }
 
+    @Override
+    public int abs() {
+        return 0;
+    }
 
     String s = " ";
-    String str = ".//*String";
+    String str = "./*String";
 
     public int foo() {
         return i + in;
     }
 
-    void show() { System.out.println("Parent's show()"); }
+    void show() {
+        System.out.println("Parent's show()");
+    }
 
     public void method() {
         int a = 1;
@@ -43,9 +54,13 @@ public class ClassA implements ParentInterface {
 
     public void setShrta(Float fl) {
         this.fl = fl;
+
     }
 
-    
+    public void ttt(List list) {
+    }
+
+    public void methodWithParams(int int1, int int2, String string3, Object object4, boolean boolean5, Integer integer6) {
+
+    }
 }
-
-

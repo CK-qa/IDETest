@@ -32,7 +32,7 @@ public class SeleniumSimpleTest {
     }
 
     @Test
-    public void pageTitleAfterSearchShouldBeginWithDrupal() throws IOException {
+    public void pageTitleAfterSearchShouldBeginWithDrupal() {
         assertEquals("The page title should equal Google at the start of the test.", "Google", driver.getTitle());
         WebElement searchField = driver.findElement(By.name("q"));
         searchField.sendKeys("Drupal!");

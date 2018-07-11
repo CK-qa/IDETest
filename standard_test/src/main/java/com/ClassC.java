@@ -9,7 +9,7 @@ import java.util.List;
 public class ClassC extends Demo {
 
     void method() {
-        String c = "lalaw111111";
+        String c = "ololo111111";
     }
 
     String c1 = "ololo111111";
@@ -33,8 +33,7 @@ public class ClassC extends Demo {
     }
 
     String c13 = "ololo1111111";
-    String c14 = "ololo1111111";
-    String c15 = "ololo1111111";
+    String c14 = "ololo1111111";    String c15 = "ololo1111111";
     String c16 = "ololo1111111";
     String c17 = "ololo1111111";
     static String c18 = "ololo1111111";
@@ -126,5 +125,11 @@ public class ClassC extends Demo {
     private abstract class AbstractInnerClass {
         private Boolean aBoolean;
     }
-}
 
+    class InnerClassInClassC {
+
+        public void foo() {
+            System.out.println("foo!!!");
+        }
+    }
+}

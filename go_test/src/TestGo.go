@@ -4,11 +4,11 @@ import "fmt"
 
 func main() {
 	fmt.Println("hello world")
-	otherFunc()
-	forCycle()
+	otherVarFunc()
+	forCycleFun()
 }
 
-func otherFunc() {
+func otherVarFunc() {
 	var a = "print with Go"
 	fmt.Println(a)
 	//You can declare multiple variables at once.
@@ -29,7 +29,7 @@ func otherFunc() {
 	fmt.Println(f)
 }
 
-func forCycle() {
+func forCycleFun() {
 	i := 1
 	for i <= 3 {
 		fmt.Println(i)

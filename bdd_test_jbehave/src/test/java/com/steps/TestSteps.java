@@ -15,7 +15,6 @@ public class TestSteps {
 
     public TestSteps() {
         stack = new Stack<String>();
-
     }
 
     @Given("an empty stack")
