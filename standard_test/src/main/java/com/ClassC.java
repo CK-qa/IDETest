@@ -33,7 +33,8 @@ public class ClassC extends Demo {
     }
 
     String c13 = "ololo1111111";
-    String c14 = "ololo1111111";    String c15 = "ololo1111111";
+    String c14 = "ololo1111111";
+    String c15 = "ololo1111111";
     String c16 = "ololo1111111";
     String c17 = "ololo1111111";
     static String c18 = "ololo1111111";
@@ -77,9 +78,7 @@ public class ClassC extends Demo {
     }
 
     public void superMethod() {
-        method(
-                "s", 12
-        );
+        method("s", 12);
     }
 
     String path = "";
@@ -102,11 +101,7 @@ public class ClassC extends Demo {
 
     public boolean isLeafNode() {
         return
-                (
-                        leftNode == null
-                ) && (
-                        rightNode == null
-                );
+                (leftNode == null) && (rightNode == null);
     }
 
     public boolean isIs() {
