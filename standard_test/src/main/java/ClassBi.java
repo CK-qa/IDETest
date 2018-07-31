@@ -1,6 +1,4 @@
-import javax.xml.transform.sax.SAXSource;
-
-public class ClassBi extends ClassA implements Interface {
+public class ClassBi extends ClassA implements Interface_I {
 
     static String one;
     static String two;

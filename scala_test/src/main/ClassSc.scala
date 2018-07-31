@@ -3,7 +3,7 @@ import com.sun.tools.javac.code.Attribute.Array
 def squareof(x: Int) =  x * x
 
 def main(args: Array[String]): Unit = {
-  squareOf(5)
+  squareof(5)
 }
 
 

@@ -1,4 +1,4 @@
-public interface Interface extends ParentInterface {
+public interface Interface_I extends ParentInterface {
 
     /**
      * Implement this interface to make your own tester for whether a node
