@@ -17,12 +17,12 @@ public class TestNGTestsClass {
 
     @AfterMethod
     void afterMethod() {
-        System.out.println("After method");
+        System.out.println("After renamedMethod");
     }
 
     @BeforeMethod
     void beforeMethod() {
-        System.out.println("Before method");
+        System.out.println("Before renamedMethod");
     }
 
     @Test

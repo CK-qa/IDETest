@@ -11,6 +11,12 @@ public class ClassAImpl extends ClassA {
      * Test
      * <b>Test</b>
      */
+
+    /**
+     * FIXME: we need to do very important thing with
+     *  the current class
+     *  Thread-safe
+     */
     public void transform() {
     }
 
@@ -20,26 +26,29 @@ public class ClassAImpl extends ClassA {
      * @param one
      * @param a   more text
      */
-    public static void method(String one, int a) {
+    public static void renamedMethod(String one, int a) {
         String two = one + "lalala";
         String three = two + "pewpew";
     }
 
-    public void method(String one, String two) {
+    public void renamedMethod(String one, String two) {
+
     }
 
 
-    public void method(String one, String two, String three) throws Exception {
+    public void renamedMethod(String one, String two, String three) throws Exception {
     }
 
     /**
+     * TODO
      * Returns an Image object that can then be painted on the screen.
-     * <p>
+     * fixme
+     *  <p>
      * <p>
      * The url argument must specify an absolute {@link URL}. The name
      * argument is a specifier that is relative to the url argument.
      * <p>
-     * This method always returns immediately, whether or not the
+     * This renamedMethod always returns immediately, whether or not the
      * image exists. When this applet attempts to draw the image on
      * the screen, the data will be loaded. The graphics primitives
      * that draw the image will incrementally paint on the screen.
@@ -56,11 +65,11 @@ public class ClassAImpl extends ClassA {
 
     public void test() {
         show();
-        method("ololo", 1);
+        renamedMethod("ololo", 1);
     }
 
     public static void main(String[] args) {
-        method("ololo", 2);
+        renamedMethod("ololo", 2);
     }
 
     @Override
