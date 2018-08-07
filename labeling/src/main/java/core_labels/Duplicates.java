@@ -7,6 +7,7 @@ public class Duplicates {
     }
 
     public int test(int a, int b) {
+        a=b;
         return a + b;
     }
 
