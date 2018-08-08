@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClassC extends Demo {
+public class MergeConflictClass extends Demo {
 
     void method() {
         String c = "ololo111111";
@@ -111,7 +111,7 @@ public class ClassC extends Demo {
     private void testrrr() {
         while (isLeafNode() &&
                 isIs()) {
-            System.out.println("foo");
+            System.out.println("ololo");
         }
     }
 
@@ -121,10 +121,10 @@ public class ClassC extends Demo {
         private Boolean aBoolean;
     }
 
-    class InnerClassInClassC {
+    class InnerClassInMergeConflictClass {
 
         public void foo() {
-            System.out.println("foo!!!");
+            System.out.println("pewpew");
         }
     }
 }

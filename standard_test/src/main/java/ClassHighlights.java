@@ -1,4 +1,8 @@
 public class ClassHighlights {
-        public void foo() {
-        }
+
+    /**
+     * <br />
+     */
+    public void foo() {
+    }
 }
