@@ -9,35 +9,35 @@ import java.util.List;
 public class MergeConflictClass extends Demo {
 
     void method() {
-        String c = "ololo111111";
+        String c = "ololo";
     }
 
-    String c1 = "ololo111111";
-    String c2 = "ololo111111";
-    String c3 = "ololo111111";
-    String c4 = "ololo111111";
+    String c1 = "ololo";
+    String c2 = "ololo";
+    String c3 = "ololo";
+    String c4 = "ololo";
 
     void method1() {
-        String c5 = "ololo111111";
+        String c5 = "ololo";
     }
 
-    String c6 = "ololo111111";
-    String c7 = "ololo111111";
-    String c8 = "ololo111111";
-    String c9 = "ololo1111111";
-    String c10 = "ololo111111";
-    String c11 = "ololo1111111";
+    String c6 = "ololo";
+    String c7 = "ololo";
+    String c8 = "ololo";
+    String c9 = "ololo";
+    String c10 = "ololo";
+    String c11 = "ololo";
 
     void test() {
-        System.out.println("ololo1111111");
+        System.out.println("ololo");
     }
 
-    String c13 = "ololo1111111";
-    String c14 = "ololo1111111";
-    String c15 = "ololo1111111";
-    String c16 = "ololo1111111";
-    String c17 = "ololo1111111";
-    static String c18 = "ololo1111111";
+    String c13 = "ololo";
+    String c14 = "ololo";
+    String c15 = "ololo";
+    String c16 = "ololo";
+    String c17 = "ololo";
+    static String c18 = "ololo";
 
     public void foo() {
         for (

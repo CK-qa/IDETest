@@ -47,7 +47,7 @@ public class Calcs implements FInterface, AnnotationToTest {
 
     private static Calcs calcs = new Calcs();
 
-    private static int method(int a) {
+    private static int metgrfghod(int a) {
         return a + a;
     }
 
