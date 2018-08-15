@@ -18,5 +18,4 @@ class GroovyClass {
     void methWithParams(int integer, int integer2, String string, Object object, boolean boo, Integer intgr) {
 
     }
-
 }

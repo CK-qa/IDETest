@@ -5,4 +5,8 @@ public class ClassHighlights {
      */
     public void foo() {
     }
+
+    public void bar() {
+        System.out.print("olololo");
+    }
 }
