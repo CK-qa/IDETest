@@ -2,7 +2,6 @@ import java.util.List;
 
 public class ClassA implements ParentInterface {
 
-    static String moveUp;
     int i;
     float f;
     short sh;

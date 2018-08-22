@@ -14,6 +14,7 @@ public class JUnitTestsClass {
     @Before
     public void beforeClass() {
         System.out.println("This should be printed Before Method execution");
+        System.out.println("This is typed in master");
     }
 
     @After

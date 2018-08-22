@@ -36,7 +36,6 @@ public class TestToRun extends JUnitStory {
                 .useStoryReporterBuilder(new StoryReporterBuilder().withDefaultFormats().withFormats(Format.CONSOLE, Format.TXT));
     }
 
-
     // Here we specify the steps classes
     @Override
     public List<CandidateSteps> candidateSteps() {
