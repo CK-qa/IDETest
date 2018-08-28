@@ -70,6 +70,7 @@ public class JUnitTestsClass {
             Assert.assertEquals(prop.getProperty("anotherPropertyName"), "anotherPropertyValue");
         } catch (IOException e) {
             e.printStackTrace();
+            e.fillInStackTrace();
         }
     }
 }
