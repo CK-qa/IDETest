@@ -36,7 +36,12 @@ public class ClassA implements ParentInterface {
         int a = 1;
         final int i = ClassBi.intValue();
         int b = a + i;
-        int c = b + i;
+        final int var = b + i;
+        int c = var;
+    }
+
+    public ClassA() {
+        super();
     }
 
     public ClassA(int i, float f, short sh, long l) {

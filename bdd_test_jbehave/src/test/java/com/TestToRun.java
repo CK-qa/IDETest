@@ -43,5 +43,4 @@ public class TestToRun extends JUnitStory {
         return new InstanceStepsFactory(configuration(), new TestSteps()) //
                 .createCandidateSteps();
     }
-
 }

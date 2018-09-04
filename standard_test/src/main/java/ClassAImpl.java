@@ -20,13 +20,13 @@ public class ClassAImpl extends ClassA {
     public void transform() {
     }
 
-    /**
+      /**
      * some test
      *
      * @param one
      * @param a   more text
      */
-    public static void renamedMethod(String one, int a) {
+    private static void renamedMethod(String one, int a) {
         String two = one + "lalala";
         String three = two + "pewpew";
     }
@@ -58,7 +58,7 @@ public class ClassAImpl extends ClassA {
      * @return the image at the specified URL
      * @see Image
      */
-    public Image getImage(URL url, String name) {
+    protected Image getImage(URL url, String name) {
         return getImage(url, name);
     }
 
