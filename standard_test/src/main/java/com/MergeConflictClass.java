@@ -1,5 +1,7 @@
 package com;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,7 +23,13 @@ public class MergeConflictClass extends Demo {
         String c5 = "ololo";
     }
 
-    String c6 = "ololo";
+    String c6 = getOlolo();
+
+    @NotNull
+    private String getOlolo() {
+        return "ololo";
+    }
+
     String c7 = "ololo";
     String c8 = "ololo";
     String c9 = "ololo";

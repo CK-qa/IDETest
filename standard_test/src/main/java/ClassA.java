@@ -35,6 +35,9 @@ public class ClassA implements ParentInterface {
     public void method() {
         int a = 1;
         final int i = ClassBi.intValue();
+
+
+
         int b = a + i;
         final int var = b + i;
         int c = var;
