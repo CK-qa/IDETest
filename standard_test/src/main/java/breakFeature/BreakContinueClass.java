@@ -39,6 +39,10 @@ public class BreakContinueClass {
             }
         }
 
+        public Break() {
+            super();
+        }
+
         public void whileLoopBreak() {
             int i = Integer.MAX_VALUE;
             while (i < 10) {
@@ -251,6 +255,19 @@ public class BreakContinueClass {
                 continue label;
             } while (false);
 
+        }
+
+        public boolean condition(int in) {
+            return in % 2 == 0;
+        }
+
+        public void testBug() {
+            int[] list = {1,3,5,7};
+            for (int i : list) {
+                if (condition(i)) {
+                    continue; // <-highlighted
+                }
+            }
         }
     }
 }

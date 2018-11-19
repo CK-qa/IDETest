@@ -18,6 +18,7 @@ public class TestNGTestsClass {
     @AfterMethod
     void afterMethod() {
         System.out.println("After renamedMethod");
+        System.out.println("This is typed in the new branch");
     }
 
     @BeforeMethod

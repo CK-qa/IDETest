@@ -1,7 +1,6 @@
 package core_labels;
 
 import java.lang.annotation.Annotation;
-import java.util.Map;
 import java.util.Scanner;
 
 import static core_labels.MClass.power;

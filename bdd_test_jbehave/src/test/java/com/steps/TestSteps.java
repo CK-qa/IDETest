@@ -23,7 +23,6 @@ public class TestSteps {
     }
 
     /**
-     *
      * @param elementCount todo
      */
     @When("I add $number elements")
@@ -39,11 +38,6 @@ public class TestSteps {
         Assert.assertThat(stack.size(), equalTo(elementCount));
         Assert.assertEquals(stack.size(), elementCount);
     }
-    /**
-     * foo
-     * foo
-     * foo
-     */
 
     @Then("test it properly")
     public void testItProperly() {

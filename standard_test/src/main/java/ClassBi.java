@@ -3,6 +3,7 @@ public class ClassBi extends ClassA implements Interface_I {
     static String one;
     static String two;
     static String moveDown;
+    static String moveUp;
 
     public ClassBi(int i, float f, short sh, long l) {
         super(i, f, sh, l);

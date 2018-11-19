@@ -2,7 +2,6 @@ import java.util.List;
 
 public class ClassA implements ParentInterface {
 
-    static String moveUp;
     int i;
     float f;
     short sh;
@@ -37,8 +36,16 @@ public class ClassA implements ParentInterface {
     public void method() {
         int a = 1;
         final int i = ClassBi.intValue();
+
+
+
         int b = a + i;
-        int c = b + i;
+        final int var = b + i;
+        int c = var;
+    }
+
+    public ClassA() {
+        super();
     }
 
     public ClassA(int i, float f, short sh, long l) {
