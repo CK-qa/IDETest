@@ -18,6 +18,7 @@ public class ClassAImpl extends ClassA {
      *  Thread-safe
      */
     public void transform() {
+        wait();
     }
 
     /**
@@ -32,7 +33,7 @@ public class ClassAImpl extends ClassA {
     }
 
     public void renamedMethod(String one, String two) {
-
+        one.
     }
 
 

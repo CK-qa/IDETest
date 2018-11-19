@@ -24,6 +24,7 @@ public class JUnitTestsClass {
     @Test
     public void jUnitTest() {
         System.out.println("jUnitTest running");
+        System.out.println("master");
         Assert.assertThat("Not ok", "String", containsString("String"));
     }
 

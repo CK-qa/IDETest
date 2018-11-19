@@ -28,8 +28,10 @@ public class TestNGTestsClass {
     @Test
     public void testNGTest() {
         System.out.println("testNGTest running");
+        System.out.println("branch2a");
         Assert.assertEquals(1, 1);
     }
+
 
     @Test
     public void testNGTestNegative() {

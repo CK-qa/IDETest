@@ -22,4 +22,8 @@ public class ShadowClass {
         fl.methodInFirstLevel(15);
 
     }
+
+    public void foo() {
+        
+    }
 }
