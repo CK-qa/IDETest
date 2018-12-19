@@ -11,7 +11,7 @@ Feature:
   And everybody happy
 
 
-  Scenario: items count 2
+  Scenario: items count 2.
 
     Given user has 120 items
     When user loses 70 items
